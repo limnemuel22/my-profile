@@ -11,7 +11,7 @@ export const profile = {
     'Nine years building web apps. Angular, TypeScript, and JavaScript are my core — with React, Vue, Apigee, and .NET when the project needs it.',
   about: [
     'Hi, I’m Nemuel Sumagui Lim — Nemuel Lim, or Nem for short. This is my profile: Nem Profile, a page for who I am and the work I ship. I have 9 years in IT as a web application developer. My primary expertise is Angular, TypeScript, and JavaScript. React and Vue are my secondary frameworks.',
-    'At Blackfort I work as a senior frontend engineer and, depending on the project, as a full-stack developer. Day to day that usually means Angular on the UI and Apigee for API management, with T-SQL and C# .NET when we own more of the stack. I have also shipped static and headless-CMS sites with React (Gatsby), Netlify, Decap CMS, and Strapi.',
+    'I currently work at Tinsel CRM as a senior front-end developer on the Franchise Portal, Employee Portal, and CRM apps. Before that I was at Blackfort as a senior frontend and sometimes full-stack engineer — Angular on the UI, Apigee for API management, plus T-SQL and C# .NET when we owned more of the stack. I have also shipped static and headless-CMS sites with React (Gatsby), Netlify, Decap CMS, and Strapi.',
     'I started as a junior full-stack developer on PHP and CodeIgniter, then moved into frontend-heavy Angular work for local and international teams. I am continuously learning, adaptive, and flexible — currently deepening React, Node.js / NestJS, and Flutter. I also use AI-assisted development in my daily workflow with Cursor, Claude, ChatGPT, and GitHub Copilot. Outside work I like sports, mobile games, and PC games. Originally from Talon, Amadeo, Cavite.',
   ],
   avatar: '/nemuel.jpg',
@@ -32,9 +32,21 @@ export const profile = {
 
 export const experience = [
   {
+    role: 'Sr. Front-end Developer',
+    company: 'Tinsel CRM',
+    period: '2024 — Present',
+    location: 'Full-time',
+    highlights: [
+      'Primary front-end developer for the Franchise Portal — building, maintaining, and improving features and UI.',
+      'Worked across Tinsel CRM, Tinsel Employee Portal, and Franchise Portal, including mobile-responsive layouts.',
+      'Maintained the legacy Mockup Tool and independently built Mockup Tool Version 2 with new features and UI.',
+      'Investigated issues across frontend, backend/API, SQL, and MongoDB, and supported clients through chat, calls, Gmail, and HighLevel.',
+    ],
+  },
+  {
     role: 'Senior Frontend / Full Stack Developer',
     company: 'Blackfort PH',
-    period: 'Jan 2023 — Present',
+    period: '2021 — 2024',
     location: 'Philippines',
     highlights: [
       'Senior frontend, and full-stack when the project needs it — mainly Angular on the UI with Apigee, T-SQL, and C# .NET.',
@@ -157,21 +169,21 @@ export const skillGroups = [
 
 export const projects = [
       {
+        name: 'Tinsel CRM',
+        company: 'Tinsel CRM',
+        description:
+          'Primary front-end work on Tinsel CRM, Employee Portal, and Franchise Portal. Mockup Tool v1 support and Mockup Tool v2 build, plus client support and production fixes across Angular, REST APIs, SQL, and MongoDB.',
+        tags: ['Angular', 'TypeScript', 'REST APIs', 'MongoDB', 'AWS'],
+        live: 'https://www.tinselcrm.com/',
+        repo: null,
+      },
+      {
         name: 'Cebu Pacific web applications',
         company: 'Blackfort PH',
         description:
           'Lead frontend developer on airline web apps, working with QA and product to ship production features for Cebu Pacific.',
         tags: ['Angular', 'TypeScript', 'Apigee'],
         live: null,
-        repo: null,
-      },
-      {
-        name: 'Tinsel CRM',
-        company: 'Blackfort PH',
-        description:
-          'Construction CRM used for proposals, invoices, franchise templates, payments, and field support. Frontend feature work plus client support.',
-        tags: ['Frontend', 'CRM', 'Support'],
-        live: 'https://www.tinselcrm.com/',
         repo: null,
       },
       {
