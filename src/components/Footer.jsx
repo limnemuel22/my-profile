@@ -5,9 +5,9 @@ export default function Footer() {
     <footer className="border-t border-line">
       <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-8 font-mono text-xs tracking-widest text-muted uppercase sm:flex-row sm:items-center sm:justify-between">
         <p>
-          © {new Date().getFullYear()} {profile.name}
+          © {new Date().getFullYear()} {profile.fullName} · {profile.name} · {profile.shortName}
         </p>
-        <p>End of transmission</p>
+        <p>Nem Profile</p>
       </div>
     </footer>
   )

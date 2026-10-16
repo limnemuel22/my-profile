@@ -13,8 +13,11 @@ export default function Hero() {
           Nemuel
           <span className="block text-gold">Lim</span>
         </h1>
-        <p className="mt-4 font-mono text-sm tracking-[0.2em] text-muted uppercase">
-          Tag · {profile.shortName}
+        <p className="mt-4 font-display text-lg tracking-[0.16em] text-paper uppercase">
+          {profile.fullName}
+        </p>
+        <p className="mt-2 font-mono text-sm tracking-[0.2em] text-muted uppercase">
+          {profile.shortName} · Nem Profile
         </p>
         <p className="mt-5 text-xl font-medium tracking-wide text-gold-soft uppercase">
           {profile.title}

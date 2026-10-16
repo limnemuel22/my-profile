@@ -1,17 +1,21 @@
 export const profile = {
   name: 'Nemuel Lim',
+  fullName: 'Nemuel Sumagui Lim',
   shortName: 'Nem',
+  aliases: ['Nemuel Lim', 'Nemuel Sumagui Lim', 'Nem', 'Nem Profile'],
   initials: 'NL',
+  siteUrl: 'https://my-profile.vercel.app',
   title: 'Senior Frontend Developer · Angular & Full-Stack',
   location: 'Bacoor, Cavite, Philippines',
   headline:
     'Nine years building web apps. Angular, TypeScript, and JavaScript are my core — with React, Vue, Apigee, and .NET when the project needs it.',
   about: [
-    'Hi, I’m Nemuel Lim — Nem for short. I have 9 years in IT as a web application developer. My primary expertise is Angular, TypeScript, and JavaScript. React and Vue are my secondary frameworks.',
+    'Hi, I’m Nemuel Sumagui Lim — Nemuel Lim, or Nem for short. This is my profile: Nem Profile, a page for who I am and the work I ship. I have 9 years in IT as a web application developer. My primary expertise is Angular, TypeScript, and JavaScript. React and Vue are my secondary frameworks.',
     'At Blackfort I work as a senior frontend engineer and, depending on the project, as a full-stack developer. Day to day that usually means Angular on the UI and Apigee for API management, with T-SQL and C# .NET when we own more of the stack. I have also shipped static and headless-CMS sites with React (Gatsby), Netlify, Decap CMS, and Strapi.',
     'I started as a junior full-stack developer on PHP and CodeIgniter, then moved into frontend-heavy Angular work for local and international teams. I am continuously learning, adaptive, and flexible — currently deepening React, Node.js / NestJS, and Flutter. I also use AI-assisted development in my daily workflow with Cursor, Claude, ChatGPT, and GitHub Copilot. Outside work I like sports, mobile games, and PC games. Originally from Talon, Amadeo, Cavite.',
   ],
   avatar: '/nemuel.jpg',
+  thumbnail: '/og.jpg',
   email: 'lim.nemuel.22@gmail.com',
   phone: '09059772573',
   phoneHref: 'tel:+639059772573',
