@@ -1,6 +1,6 @@
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
-import { profile } from '../data/profile'
+import DownloadPdfButton from './DownloadPdfButton'
 
 const links = [
   { href: '#about', label: 'About' },
@@ -30,14 +30,7 @@ export default function Navbar() {
             </li>
           ))}
           <li>
-            <a
-              href={profile.social.github}
-              target="_blank"
-              rel="noreferrer"
-              className="slash border border-gold px-3 py-1.5 text-gold transition hover:bg-gold hover:text-ink"
-            >
-              GitHub
-            </a>
+            <DownloadPdfButton variant="nav" />
           </li>
         </ul>
 
@@ -61,9 +54,7 @@ export default function Navbar() {
             </li>
           ))}
           <li>
-            <a href={profile.social.github} target="_blank" rel="noreferrer">
-              GitHub
-            </a>
+            <DownloadPdfButton variant="nav" />
           </li>
         </ul>
       )}

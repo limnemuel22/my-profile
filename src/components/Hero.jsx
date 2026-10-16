@@ -1,5 +1,6 @@
 import { ArrowUpRight, MapPin } from 'lucide-react'
 import { profile } from '../data/profile'
+import DownloadPdfButton from './DownloadPdfButton'
 
 export default function Hero() {
   return (
@@ -30,9 +31,10 @@ export default function Hero() {
           {profile.location}
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
+          <DownloadPdfButton />
           <a
             href="#contact"
-            className="slash bg-gold px-6 py-3 font-display text-sm tracking-[0.18em] text-ink uppercase transition hover:bg-gold-soft"
+            className="slash inline-flex items-center border border-line px-6 py-3 font-display text-sm tracking-[0.18em] text-paper uppercase transition hover:border-gold hover:text-gold"
           >
             Press start
           </a>
@@ -56,9 +58,9 @@ export default function Hero() {
           alt={`Portrait of ${profile.name}`}
           className="relative aspect-[4/5] w-full object-cover object-[center_18%] grayscale-[0.15] contrast-110"
         />
-        <p className="absolute right-3 bottom-3 font-mono text-[10px] tracking-[0.3em] text-gold uppercase">
-          LVL 09
-        </p>
+        {/* <p className="absolute right-3 bottom-3 font-mono text-[10px] tracking-[0.3em] text-gold uppercase">
+          LVL 100
+        </p> */}
       </div>
     </section>
   )
