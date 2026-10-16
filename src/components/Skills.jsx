@@ -5,7 +5,7 @@ export default function Skills() {
   return (
     <section className="border-t border-line">
       <div className="mx-auto max-w-6xl px-5 py-20">
-        <SectionHeading index={4}>Skills</SectionHeading>
+        <SectionHeading>Skills</SectionHeading>
         <div className="grid gap-10 md:grid-cols-2">
           {skillGroups.map((group) => (
             <div key={group.title}>

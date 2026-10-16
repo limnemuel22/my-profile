@@ -21,7 +21,7 @@ export default function Navbar() {
           <span className="text-gold"> Profile</span>
         </a>
 
-        <ul className="hidden items-center gap-7 font-mono text-xs tracking-[0.18em] text-muted uppercase md:flex">
+        <ul className="hidden items-center gap-7 font-mono text-xs tracking-[0.18em] text-paper uppercase md:flex">
           {links.map((link) => (
             <li key={link.href}>
               <a href={link.href} className="transition hover:text-gold">

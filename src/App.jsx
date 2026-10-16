@@ -11,10 +11,10 @@ import Skills from './components/Skills'
 
 export default function App() {
   return (
-    <div className="relative min-h-svh bg-ink">
+    <div id="profile-capture" className="relative min-h-svh bg-ink">
       <Seo />
-      <div className="stage" aria-hidden="true" />
-      <div className="scanlines" aria-hidden="true" />
+      <div className="stage pdf-hide" aria-hidden="true" />
+      <div className="scanlines pdf-hide" aria-hidden="true" />
       <Navbar />
       <main>
         <Hero />

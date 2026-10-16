@@ -7,7 +7,13 @@ const pageDescription =
 
 export default function Seo() {
   useEffect(() => {
-    document.title = pageTitle
+    const isAdmin = window.location.pathname.replace(/\/$/, '') === '/admin'
+    document.title = isAdmin ? `${pageTitle} | Admin` : pageTitle
+
+    const robots = document.querySelector('meta[name="robots"]')
+    if (robots) {
+      robots.setAttribute('content', isAdmin ? 'noindex, nofollow' : 'index, follow')
+    }
 
     const image = `${profile.siteUrl}${profile.avatar}`
     const thumbnail = `${profile.siteUrl}${profile.thumbnail}`

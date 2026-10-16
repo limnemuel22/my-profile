@@ -17,16 +17,16 @@ export default function Hero() {
         <p className="mt-4 font-display text-lg tracking-[0.16em] text-paper uppercase">
           {profile.fullName}
         </p>
-        <p className="mt-2 font-mono text-sm tracking-[0.2em] text-muted uppercase">
+        <p className="mt-2 font-mono text-sm tracking-[0.2em] text-paper uppercase">
           {profile.shortName} · Nem Profile
         </p>
         <p className="mt-5 text-xl font-medium tracking-wide text-gold-soft uppercase">
           {profile.title}
         </p>
-        <p className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
+        <p className="mt-6 max-w-xl text-base leading-relaxed text-paper sm:text-lg">
           {profile.headline}
         </p>
-        <p className="mt-5 flex items-center gap-2 font-mono text-sm text-muted uppercase">
+        <p className="mt-5 flex items-center gap-2 font-mono text-sm text-paper uppercase">
           <MapPin size={16} className="text-gold" />
           {profile.location}
         </p>

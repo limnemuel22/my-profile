@@ -63,11 +63,11 @@ export default function Contact() {
   return (
     <section id="contact" className="border-t border-line">
       <div className="mx-auto max-w-6xl px-5 py-20">
-        <SectionHeading index={6}>Contact</SectionHeading>
+        <SectionHeading>Contact</SectionHeading>
         <h3 className="max-w-2xl font-display text-4xl tracking-[0.08em] text-paper uppercase md:text-5xl">
           Drop a line.
         </h3>
-        <p className="mt-5 max-w-xl text-muted">
+        <p className="mt-5 max-w-xl text-paper">
           Open to senior frontend, Angular, and full-stack roles. Email, call, or message me here.
         </p>
         <ul className="mt-10 grid gap-4 sm:grid-cols-2">
@@ -83,7 +83,7 @@ export default function Contact() {
                 >
                   <Icon size={20} className="mt-0.5 shrink-0 text-gold" />
                   <span>
-                    <span className="block font-mono text-xs tracking-widest text-muted uppercase">{item.label}</span>
+                    <span className="block font-mono text-xs tracking-widest text-paper uppercase">{item.label}</span>
                     <span className="mt-1 block break-all text-paper">{item.value}</span>
                   </span>
                 </a>
