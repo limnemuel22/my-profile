@@ -4,7 +4,7 @@ export const profile = {
   shortName: 'Nem',
   aliases: ['Nemuel Lim', 'Nemuel Sumagui Lim', 'Nem', 'Nem Profile'],
   initials: 'NL',
-  siteUrl: 'https://my-profile.vercel.app',
+  siteUrl: (import.meta.env.VITE_SITE_URL || 'https://my-profile.vercel.app').replace(/\/$/, ''),
   title: 'Senior Frontend Developer · Angular & Full-Stack',
   location: 'Bacoor, Cavite, Philippines',
   headline:
