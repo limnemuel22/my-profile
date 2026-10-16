@@ -1,0 +1,63 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Oswald', Impact, sans-serif;
+  --font-sans: 'Rajdhani', system-ui, sans-serif;
+  --font-mono: 'Share Tech Mono', ui-monospace, monospace;
+  --color-ink: #070708;
+  --color-ink-soft: #111114;
+  --color-paper: #f3f4ec;
+  --color-muted: #9aa08c;
+  --color-gold: #c8f542;
+  --color-gold-soft: #e4ff8a;
+  --color-line: rgba(200, 245, 66, 0.16);
+  --color-rock: #e11d2e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--color-ink);
+  color: var(--color-paper);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-ink);
+}
+
+.stage {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background-image:
+    linear-gradient(rgba(200, 245, 66, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(200, 245, 66, 0.035) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+.scanlines {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 51;
+  opacity: 0.08;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 3px,
+    rgba(0, 0, 0, 0.45) 3px,
+    rgba(0, 0, 0, 0.45) 4px
+  );
+}
+
+.slash {
+  clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+}
