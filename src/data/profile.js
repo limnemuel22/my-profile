@@ -6,11 +6,11 @@ export const profile = {
   initials: 'NL',
   siteUrl: (import.meta.env.VITE_SITE_URL || 'https://my-profile.vercel.app').replace(/\/$/, ''),
   title: 'Senior Frontend Developer · Angular & Full-Stack',
-  location: 'Bacoor, Cavite, Philippines',
+  location: 'Talon, Amadeo, Cavite, Philippines',
   headline:
     'Nine years building web apps. Angular, TypeScript, and JavaScript are my core — with React, Vue, Apigee, and .NET when the project needs it.',
   about: [
-    'Hi, I’m Nemuel Sumagui Lim — Nemuel Lim, or Nem for short. This is my profile: Nem Profile, a page for who I am and the work I ship. I have 9 years in IT as a web application developer. My primary expertise is Angular, TypeScript, and JavaScript. React and Vue are my secondary frameworks.',
+    'Hi, I’m Nemuel Sumagui Lim — Nemuel Lim, or Nem for short. I have 9 years in IT as a web application developer. My primary expertise is Angular, TypeScript, and JavaScript. React and Vue are my secondary frameworks.',
     'I currently work at Tinsel CRM as a senior front-end developer on the Franchise Portal, Employee Portal, and CRM apps. Before that I was at Blackfort as a senior frontend and sometimes full-stack engineer — Angular on the UI, Apigee for API management, plus T-SQL and C# .NET when we owned more of the stack. I have also shipped static and headless-CMS sites with React (Gatsby), Netlify, Decap CMS, and Strapi. Earlier I was a Senior Software Engineer at Accenture, building enterprise Angular applications through the full SDLC — development, testing, deployment, and support.',
     'I started as a junior full-stack developer on PHP and CodeIgniter, then moved into frontend-heavy Angular work for local and international teams. I am continuously learning, adaptive, and flexible — currently deepening React, Node.js / NestJS, and Flutter. I also use AI-assisted development in my daily workflow with Cursor, Claude, ChatGPT, and GitHub Copilot. Outside work I like sports, mobile games, and PC games. Originally from Talon, Amadeo, Cavite.',
   ],

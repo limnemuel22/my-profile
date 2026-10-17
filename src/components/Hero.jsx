@@ -8,7 +8,7 @@ export default function Hero() {
       <div>
         <p className="mb-5 inline-flex items-center gap-2 font-mono text-xs tracking-[0.28em] text-gold uppercase">
           <span className="inline-block size-2 animate-pulse bg-gold" />
-          Player online
+          Developer online
         </p>
         <h1 className="font-display text-6xl leading-[0.9] tracking-[0.06em] text-paper uppercase sm:text-8xl">
           Nemuel
@@ -16,9 +16,6 @@ export default function Hero() {
         </h1>
         <p className="mt-4 font-display text-lg tracking-[0.16em] text-paper uppercase">
           {profile.fullName}
-        </p>
-        <p className="mt-2 font-mono text-sm tracking-[0.2em] text-paper uppercase">
-          {profile.shortName} · Nem Profile
         </p>
         <p className="mt-5 text-xl font-medium tracking-wide text-gold-soft uppercase">
           {profile.title}
@@ -36,7 +33,7 @@ export default function Hero() {
             href="#contact"
             className="slash inline-flex items-center border border-line px-6 py-3 font-display text-sm tracking-[0.18em] text-paper uppercase transition hover:border-gold hover:text-gold"
           >
-            Press start
+            Contact me
           </a>
           <a
             href={profile.social.linkedin}

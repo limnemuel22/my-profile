@@ -65,7 +65,7 @@ export default function Contact() {
       <div className="mx-auto max-w-6xl px-5 py-20">
         <SectionHeading>Contact</SectionHeading>
         <h3 className="max-w-2xl font-display text-4xl tracking-[0.08em] text-paper uppercase md:text-5xl">
-          Drop a line.
+          Get in touch.
         </h3>
         <p className="mt-5 max-w-xl text-paper">
           Open to senior frontend, Angular, and full-stack roles. Email, call, or message me here.
