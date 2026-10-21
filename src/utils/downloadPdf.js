@@ -3,7 +3,9 @@ import { jsPDF } from 'jspdf'
 
 const INK = '#070708'
 const CAPTURE_WIDTH = 1440
-const MIN_PAGE_CONTENT_PX = 120
+const RENDER_SCALE = 2
+const MIN_PAGE_CONTENT_PX = 160
+const SAFETY_CSS = 24
 
 export async function downloadProfilePdf() {
   const source = document.getElementById('profile-capture')
@@ -20,7 +22,7 @@ export async function downloadProfilePdf() {
   let keepRanges = []
 
   const canvas = await html2canvas(source, {
-    scale: 2,
+    scale: RENDER_SCALE,
     useCORS: true,
     backgroundColor: INK,
     windowWidth: CAPTURE_WIDTH,
@@ -70,7 +72,8 @@ export async function downloadProfilePdf() {
     },
   })
 
-  const scale = canvas.height / layoutHeight
+  const scale = canvas.width / CAPTURE_WIDTH || canvas.height / layoutHeight
+  const safety = SAFETY_CSS * scale
   const keeps = keepRanges.map((range) => ({
     top: range.top * scale,
     bottom: range.bottom * scale,
@@ -80,7 +83,7 @@ export async function downloadProfilePdf() {
   const pageWidth = pdf.internal.pageSize.getWidth()
   const pageHeight = pdf.internal.pageSize.getHeight()
   const pageHeightPx = (pageHeight / pageWidth) * canvas.width
-  const slices = sliceCanvasPages(canvas.height, pageHeightPx, keeps)
+  const slices = sliceCanvasPages(canvas.height, pageHeightPx, keeps, safety)
 
   const fillPage = () => {
     pdf.setFillColor(7, 7, 8)
@@ -117,7 +120,12 @@ export async function downloadProfilePdf() {
   pdf.save('Nemuel-Sumagui-Lim-Profile.pdf')
 }
 
-function sliceCanvasPages(totalHeight, pageHeightPx, keeps) {
+function sliceCanvasPages(totalHeight, pageHeightPx, keeps, safety) {
+  const padded = keeps.map((keep) => ({
+    top: keep.top - safety,
+    bottom: keep.bottom + safety,
+    originTop: keep.top,
+  }))
   const pages = []
   let y = 0
 
@@ -125,9 +133,9 @@ function sliceCanvasPages(totalHeight, pageHeightPx, keeps) {
     let next = Math.min(y + pageHeightPx, totalHeight)
 
     if (next < totalHeight) {
-      const hits = keeps.filter((keep) => keep.top < next && keep.bottom > next)
+      const hits = padded.filter((keep) => keep.top < next && keep.bottom > next)
       if (hits.length) {
-        const cut = Math.min(...hits.map((keep) => keep.top))
+        const cut = Math.min(...hits.map((keep) => keep.originTop)) - safety
         if (cut > y + MIN_PAGE_CONTENT_PX) {
           next = cut
         }
