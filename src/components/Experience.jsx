@@ -10,7 +10,7 @@ export default function Experience() {
           {experience.map((job) => (
             <li
               key={`${job.company}-${job.period}`}
-              className="grid gap-4 border-t border-line py-8 md:grid-cols-[220px_1fr]"
+              className="pdf-keep grid gap-4 border-t border-line py-8 md:grid-cols-[220px_1fr]"
             >
               <p className="font-mono text-xs tracking-widest text-paper uppercase">{job.period}</p>
               <div>

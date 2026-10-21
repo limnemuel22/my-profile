@@ -27,7 +27,7 @@ export default function Hero() {
           <MapPin size={16} className="text-gold" />
           {profile.location}
         </p>
-        <div className="mt-8 flex flex-wrap gap-3">
+        <div className="pdf-hide mt-8 flex flex-wrap gap-3">
           <DownloadPdfButton />
           <a
             href="#contact"

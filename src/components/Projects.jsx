@@ -11,7 +11,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <article
               key={project.name}
-              className="flex flex-col border border-line border-l-4 border-l-gold bg-ink-soft p-6 transition hover:border-gold hover:border-l-rock"
+              className="pdf-keep flex flex-col border border-line border-l-4 border-l-gold bg-ink-soft p-6 transition hover:border-gold hover:border-l-rock"
             >
               <p className="font-mono text-[10px] tracking-[0.3em] text-paper">
                 QUEST {String(index + 1).padStart(2, '0')}

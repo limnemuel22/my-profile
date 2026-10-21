@@ -14,7 +14,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-40 border-b border-line bg-ink/85 backdrop-blur-md">
+    <header className="pdf-hide sticky top-0 z-40 border-b border-line bg-ink/85 backdrop-blur-md">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
         <a href="#top" className="font-display text-lg tracking-[0.18em] text-paper uppercase">
           Nem

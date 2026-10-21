@@ -74,7 +74,7 @@ export default function Contact() {
           {contacts.map((item) => {
             const Icon = item.icon
             return (
-              <li key={item.label}>
+              <li key={item.label} className="pdf-keep">
                 <a
                   href={item.href}
                   target={item.href.startsWith('http') ? '_blank' : undefined}
