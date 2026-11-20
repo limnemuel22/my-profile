@@ -29,8 +29,9 @@ export default function Navbar() {
               </a>
             </li>
           ))}
-          <li>
+          <li className="flex items-center gap-2">
             <DownloadPdfButton variant="nav" />
+            <DownloadPdfButton variant="nav" theme="light" />
           </li>
         </ul>
 
@@ -53,8 +54,9 @@ export default function Navbar() {
               </a>
             </li>
           ))}
-          <li>
+          <li className="flex flex-wrap gap-2">
             <DownloadPdfButton variant="nav" />
+            <DownloadPdfButton variant="nav" theme="light" />
           </li>
         </ul>
       )}

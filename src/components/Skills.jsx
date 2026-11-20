@@ -4,7 +4,7 @@ import SectionHeading from './SectionHeading'
 export default function Skills() {
   return (
     <section className="border-t border-line">
-      <div className="pdf-keep mx-auto max-w-6xl px-5 py-20">
+      <div className="mx-auto max-w-6xl px-5 py-20">
         <SectionHeading>Skills</SectionHeading>
         <div className="grid gap-10 md:grid-cols-2">
           {skillGroups.map((group) => (

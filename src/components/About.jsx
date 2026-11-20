@@ -8,9 +8,11 @@ export default function About() {
         <SectionHeading>About</SectionHeading>
         <div className="space-y-5 text-base leading-relaxed text-paper sm:text-lg">
           {profile.about.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
+            <p key={paragraph} className="pdf-keep">
+              {paragraph}
+            </p>
           ))}
-          <dl className="mt-10 grid gap-6 sm:grid-cols-3">
+          <dl className="pdf-keep mt-10 grid gap-6 sm:grid-cols-3">
             {profile.stats.map((stat) => (
               <div key={stat.label} className="border-t-2 border-gold pt-4">
                 <dt className="font-display text-3xl tracking-wide text-gold uppercase">{stat.value}</dt>

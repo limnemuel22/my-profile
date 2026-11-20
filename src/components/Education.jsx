@@ -4,7 +4,7 @@ import SectionHeading from './SectionHeading'
 export default function Education() {
   return (
     <section id="education" className="border-t border-line">
-      <div className="mx-auto max-w-6xl px-5 py-20">
+      <div className="pdf-keep mx-auto max-w-6xl px-5 py-20">
         <SectionHeading>Education</SectionHeading>
         <ol>
           {education.map((item) => (

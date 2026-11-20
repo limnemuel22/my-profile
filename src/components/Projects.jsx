@@ -14,13 +14,13 @@ export default function Projects() {
         <SectionHeading>Projects</SectionHeading>
         <div className="grid gap-5">
           {projectRows.map((pair, rowIndex) => (
-            <div key={pair[0].name} className="pdf-keep grid gap-5 md:grid-cols-2">
+            <div key={pair[0].name} className="pdf-stack grid gap-5 md:grid-cols-2">
               {pair.map((project, colIndex) => {
                 const index = rowIndex * 2 + colIndex
                 return (
                   <article
                     key={project.name}
-                    className="flex flex-col border border-line border-l-4 border-l-gold bg-ink-soft p-6 transition hover:border-gold hover:border-l-rock"
+                    className="pdf-keep flex flex-col border border-line border-l-4 border-l-gold bg-ink-soft p-6 transition hover:border-gold hover:border-l-rock"
                   >
                     <p className="font-mono text-[10px] tracking-[0.3em] text-paper">
                       QUEST {String(index + 1).padStart(2, '0')}

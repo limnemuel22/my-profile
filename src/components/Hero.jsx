@@ -29,6 +29,7 @@ export default function Hero() {
         </p>
         <div className="pdf-hide mt-8 flex flex-wrap gap-3">
           <DownloadPdfButton />
+          <DownloadPdfButton theme="light" />
           <a
             href="#contact"
             className="slash inline-flex items-center border border-line px-6 py-3 font-display text-sm tracking-[0.18em] text-paper uppercase transition hover:border-gold hover:text-gold"

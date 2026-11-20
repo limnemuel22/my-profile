@@ -1,6 +1,6 @@
 export default function SectionHeading({ children }) {
   return (
-    <div className="mb-12">
+    <div className="pdf-heading mb-12">
       <p className="font-mono text-xs tracking-[0.35em] text-gold">//</p>
       <h2 className="mt-2 font-display text-4xl uppercase tracking-[0.12em] text-paper md:text-5xl">
         {children}
